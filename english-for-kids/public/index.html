@@ -1,1 +1,85 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English for kids</title>
+    <link rel="stylesheet" href="../style/sass/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <nav role="navigation">
+                        <div id="menu-wrapper">
+                            <input class="checkbox" type="checkbox" />
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <ul id="menu">
+                                <a href="#" class="menu__item active"><li>Main Page</li></a>
+                                <a href="#" class="menu__item"><li><i class="fas fa-swimmer"></i>Action (set A)</li></a>
+                                <a href="#" class="menu__item"><li><i class="fas fa-swimmer"></i>Action (set B)</li></a>
+                                <a href="#" class="menu__item"><li><i class="fas fa-swimmer"></i>Action (set C)</li></a>
+                                <a href="#" class="menu__item"><li><i class="fas fa-sun"></i>Adjective</li></a>
+                                <a href="#" class="menu__item"><li><i class="fa fa-paw"></i>Animal (set A)</li></a>
+                                <a href="#" class="menu__item"><li><i class="fa fa-paw"></i>Animal (set B)</li></a>
+                                <a href="#" class="menu__item"><li><i class="fas fa-tshirt"></i>Clothes</li></a>
+                                <a href="#" class="menu__item"><li><i class="far fa-grin-beam"></i>Emotions</li></a>
+                                <a href="#" class="menu__item"><li><i class="fas fa-star"></i>Scope</li></a>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-xl-4"></div>
+                    <div class="toggle-wrapper justify-content-end">
+                        <div class="toggle">
+                            <input type="checkbox" name="toggle" class="toggle__checkbox" id="mytoggle">
+                            <label class="toggle__label" for="mytoggle">
+                                <div id="background"></div>
+                                <span class="face">
+                                    <span class="face__container">
+                                        <span class="eye left"></span>
+                                        <span class="eye right"></span>
+                                        <span class="mouth"></span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-xs-6">
+                    <div class="star-container"></div>
+                    <div class="cards-category-wrapper">
+                    </div>
+                    <div class="cards-wrapper">
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="button-game">Start Game</button>
+                    </div>
+                    <div class="scope-wrapper">
+                        <div class="button-wrapper">
+                            <button class="button button__sort">Sort</button>
+                            <button class="button button__repeat">Repeat difficult words</button>
+                            <button class="button button__reset">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../dist/bundle.js"></script>
+</body>
+</html>
