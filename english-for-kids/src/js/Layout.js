@@ -1,4 +1,132 @@
+import { STAT_CLICK } from './constants';
+import cards from './cards';
+import { StatManager } from './StatManager';
+import { Scope } from './Scope';
+import { Game } from './Game';
 
+export class Layout {
+  constructor() {
+    this.menu = document.getElementById('menu');
+    this.itemsMenu = document.querySelectorAll('a[href*="#"]');
+    this.cardBody = document.getElementsByClassName('card-body');
+    this.menuLines = document.getElementsByClassName('line');
+    this.startGameButton = document.querySelector('.button-game');
+    this.cardsCategoryWrapper = document.querySelector('.cards-category-wrapper');
+    this.toggle = document.getElementById('mytoggle');
+    this.cardsWrapper = document.querySelector('.cards-wrapper');
+    this.fragment = document.createDocumentFragment();
+    this.starContainer = document.querySelector('.star-container');
+    this.scope = this.menu.lastElementChild;
+
+    this.bindCheckbox();
+    this.bindStartGameButton();
+    this.createCards();
+
+    this.statManager = new StatManager();
+
+    this.cardsCategoryWrapper.onclick = (e) => { this.clickCard(e); };
+    this.cardsWrapper.onclick = (e) => { this.clickCard(e); };
+    this.menu.onclick = (e) => { this.clickCard(e); };
+    this.toggle.onclick = (e) => { this.changeState(e); };
+    this.scope.onclick = () => { new Scope(this, this.statManager); };
+
+    this.flag = 'train';
+    this.activeCategoryIndex = 0;
+  }
+
+  getCard(title, image, rotateImg) {
+    if (`${rotateImg}` === 'undefined') {
+      rotateImg = '';
+    }
+    const cardElement = document.createElement('div');
+    cardElement.className = 'card';
+    if (this.flag === 'play') {
+      cardElement.className += ' play';
+    }
+    cardElement.innerHTML = `
+          <div class = front>
+            <img class="card-img-top" src="../assets/images/${image}" alt="${title}">
+          </div> 
+          <div class="back">
+              <img class="card-img-top" src="../assets/images/${image}" alt="${title}">
+          </div>
+          <div class="card-body">
+            <p class="card-text">${title}
+              ${rotateImg}
+            </p>
+          </div>`;
+    return cardElement;
+  }
+
+  createCards() {
+    this.activeCategoryIndex = 0;
+    this.cardsWrapper.style.display = 'none';
+    this.cardsCategoryWrapper.style.display = 'inline-flex';
+    this.togglePlayButton();
+    for (let i = 1; i < cards.length; i += 1) {
+      this.fragment.appendChild(this.getCard(cards[0][i - 1], cards[i][i - 1].image));
+    }
+    this.cardsCategoryWrapper.appendChild(this.fragment);
+  }
+
+  togglePlayButton() {
+    if (this.flag === 'play' && this.activeCategoryIndex) {
+      this.startGameButton.style.display = 'inline-block';
+    } else {
+      this.startGameButton.style.display = 'none';
+      this.resetStars();
+      this.resetCards();
+    }
+  }
+
+  rewriteCards(numberCategory) {
+    this.cardsCategoryWrapper.style.display = 'none';
+    this.activeCategoryIndex = numberCategory;
+    this.togglePlayButton();
+    const rotateImg = ' <img class="rotate" src="../assets/images/rotate.svg">';
+    for (let i = 0; i < cards[numberCategory].length; i += 1) {
+      this.fragment.appendChild(
+        this.getCard(cards[numberCategory][i].word, cards[numberCategory][i].image, rotateImg),
+      );
+    }
+    this.cardsWrapper.appendChild(this.fragment);
+  }
+
+  changeState() {
+    this.flag = this.flag === 'play' ? 'train' : 'play';
+    this.togglePlayButton();
+    if (!this.menu.classList.contains('play')) {
+      this.menu.classList.add('play');
+      this.menu.classList.add('red');
+      for (let i = 0; i < this.cardBody.length; i += 1) {
+        this.cardBody[i].parentNode.className += ' play';
+      }
+      for (let i = 0; i < this.menuLines.length; i += 1) {
+        this.menuLines[i].className += ' red';
+      }
+    } else {
+      this.menu.classList.remove('play');
+      this.menu.classList.remove('red');
+      for (let i = 0; i < this.cardBody.length; i += 1) {
+        this.cardBody[i].parentNode.classList.remove('play');
+      }
+      for (let i = 0; i < this.menuLines.length; i += 1) {
+        this.menuLines[i].classList.remove('red');
+      }
+    }
+  }
+
+  rewriteCategory(nameCategory) {
+    this.bindStartGameButton();
+    this.resetStars();
+    for (let i = 0; i < cards.length - 1; i += 1) {
+      if (nameCategory === cards[0][i]) {
+        this.cardsWrapper.innerHTML = '';
+        this.rewriteCards(i + 1);
+      }
+    }
+    this.cardsWrapper.style.display = 'inline-flex';
+  }
 
   itemMenuClick(e) {
     for (let i = 0; i < this.itemsMenu.length; i += 1) {
