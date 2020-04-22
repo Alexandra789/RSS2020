@@ -36,10 +36,6 @@ export class Game {
     return true;
   }
 
-  // showGameOver(result) {
-  //     console.log(result);
-  // }
-
   selectNewWord() {
     if (this.checkGameOver()) {
       return;
