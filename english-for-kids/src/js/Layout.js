@@ -120,12 +120,17 @@ export class Layout {
     this.bindStartGameButton();
     this.resetStars();
     for (let i = 0; i < cards.length - 1; i += 1) {
-      if (nameCategory === cards[0][i]) {
-        this.cardsWrapper.innerHTML = '';
-        this.rewriteCards(i + 1);
-      }
+        if (nameCategory === cards[0][i]) {
+            this.cardsWrapper.innerHTML = '';
+            this.rewriteCards(i + 1);
+        }
     }
-    this.cardsWrapper.style.display = 'inline-flex';
+    if(nameCategory != 'Scope') {
+        this.cardsWrapper.style.display = 'inline-flex';
+    }
+    else {
+        this.cardsWrapper.style.display = 'none';
+    }
   }
 
   itemMenuClick(e) {
@@ -140,7 +145,7 @@ export class Layout {
 
   underlineMenuItem(nameCategory) {
     for (let i = 0; i < this.itemsMenu.length; i += 1) {
-      if (this.itemsMenu[i].lastChild.innerText === nameCategory) {
+      if (this.itemsMenu[i].lastChild.innerText === nameCategory || 'Scope') {
         this.itemsMenu[i].classList.add('active');
       } else {
         this.itemsMenu[i].classList.remove('active');
