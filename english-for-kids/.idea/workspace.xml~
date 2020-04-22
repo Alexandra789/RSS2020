@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="52d37bfe-e2e4-42d7-b4a9-5020110c700d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/angry.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/bird.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/blouse.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/boot.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/cat.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/chick.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/chicken.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/coat.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/correct.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/cry.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/dance.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/dive.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/dog.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/dolphin.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/draw.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/dress.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/error.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/failure.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/fish.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/fly.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/frog.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/giraffe.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/happy.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/horse.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/hug.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/jump.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/laugh.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/lion.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/mouse.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/open.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/pants.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/pig.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/play.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/point.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/rabbit.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/ride.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/run.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/sad.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/scared.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/sheep.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/shirt.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/shoe.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/sing.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/skip.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/skirt.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/smile.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/success.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/surprised.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/swim.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/tired.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/turtle.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/angry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/argue.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/audio.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bird.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/blouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/boot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/build.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/carry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/cat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/catch.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/chick.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/chicken.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/coat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/cry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/dance.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/dive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/dog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/dolphin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/draw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/dress.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/drive.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/drop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/failure.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/fast.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/fish.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/fish1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/fly.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/frog.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/giraffe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/happy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/horse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hug.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/jump.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/laugh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/lion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/mouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/open.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/pants.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/pig.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/play.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/point.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/pull.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/push.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/rabbit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/repeat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ride.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/rotate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/run.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scared.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sheep.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/shirt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/shoe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/skip.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/skirt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/slow.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/smile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/star-win.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/surprised.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/swim.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tired.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/turtle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/Game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/Scope.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/StatManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/sass/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/sass/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/sass/style.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1aavC40O0cSKVwbCez4jOeqTvd0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52d37bfe-e2e4-42d7-b4a9-5020110c700d" name="Default Changelist" comment="" />
+      <created>1586986391418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586986391418</updated>
+      <workItem from="1586986410587" duration="1306000" />
+      <workItem from="1587055720829" duration="703000" />
+      <workItem from="1587198047380" duration="4498000" />
+      <workItem from="1587311355338" duration="3679000" />
+      <workItem from="1587400590442" duration="3357000" />
+      <workItem from="1587479059232" duration="1077000" />
+      <workItem from="1587543946555" duration="313000" />
+      <workItem from="1587559708062" duration="270000" />
+      <workItem from="1587562939008" duration="13209000" />
+      <workItem from="1587581777563" duration="1108000" />
+      <workItem from="1587585212351" duration="300000" />
+      <workItem from="1587585534905" duration="413000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="638" y="323" key="#ESLint" timestamp="1586987344258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="638" y="323" key="#ESLint/0.0.1536.824@0.0.1536.824" timestamp="1586987344258" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586987320496">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586987320496" />
+    <state x="437" y="190" key="EditFileWatcherDialog" timestamp="1586987719657">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="437" y="190" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1586987719657" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1586987721082">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586987721082" />
+    <state x="560" y="270" key="scopes" timestamp="1586987718276">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="560" y="270" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1586987718276" />
+  </component>
+</project>
