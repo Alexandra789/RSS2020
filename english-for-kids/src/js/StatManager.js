@@ -5,11 +5,6 @@ export class StatManager {
   }
 
   loadStorage() {
-    const data = localStorage.getItem('stats');
-    if (data !== 'undefined') {
-      this.data = JSON.parse(data);
-    }
-
     window.onbeforeunload = () => {
       localStorage.setItem('stats', JSON.stringify(this.data));
     };

@@ -120,16 +120,15 @@ export class Layout {
     this.bindStartGameButton();
     this.resetStars();
     for (let i = 0; i < cards.length - 1; i += 1) {
-        if (nameCategory === cards[0][i]) {
-            this.cardsWrapper.innerHTML = '';
-            this.rewriteCards(i + 1);
-        }
+      if (nameCategory === cards[0][i]) {
+        this.cardsWrapper.innerHTML = '';
+        this.rewriteCards(i + 1);
+      }
     }
-    if(nameCategory != 'Scope') {
-        this.cardsWrapper.style.display = 'inline-flex';
-    }
-    else {
-        this.cardsWrapper.style.display = 'none';
+    if (nameCategory !== 'Scope') {
+      this.cardsWrapper.style.display = 'inline-flex';
+    } else {
+      this.cardsWrapper.style.display = 'none';
     }
   }
 
@@ -145,7 +144,7 @@ export class Layout {
 
   underlineMenuItem(nameCategory) {
     for (let i = 0; i < this.itemsMenu.length; i += 1) {
-      if (this.itemsMenu[i].lastChild.innerText === nameCategory || 'Scope') {
+      if (this.itemsMenu[i].lastChild.innerText === nameCategory) {
         this.itemsMenu[i].classList.add('active');
       } else {
         this.itemsMenu[i].classList.remove('active');
@@ -175,7 +174,7 @@ export class Layout {
 
   resetCards() {
     const cardImages = document.getElementsByClassName('card-img-top');
-    for (let i = 0; i < cardImages.length; i++) {
+    for (let i = 0; i < cardImages.length; i += 1) {
       cardImages[i].classList.remove('inactive');
     }
   }
