@@ -14,6 +14,7 @@ export class Layout {
     this.cardsCategoryWrapper = document.querySelector('.cards-category-wrapper');
     this.toggle = document.getElementById('mytoggle');
     this.cardsWrapper = document.querySelector('.cards-wrapper');
+    this.scopeWrapper = document.querySelector('.scope-wrapper');
     this.fragment = document.createDocumentFragment();
     this.starContainer = document.querySelector('.star-container');
     this.scope = this.menu.lastElementChild;
