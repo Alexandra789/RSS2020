@@ -16,10 +16,15 @@ export class Game {
 
   getWords() {
     const words = [];
-    for (let i = 0; i < cards[this.layout.activeCategoryIndex].length; i += 1) {
-      words.push(cards[this.layout.activeCategoryIndex][i].word);
+    const activeCards = cards[this.layout.activeCategoryIndex];
+    for (let i = 0; i < activeCards.length; i += 1) {
+      words.push(activeCards[i].word);
     }
     return words;
+  }
+
+  showGameOver(){
+    return;
   }
 
   checkGameOver() {
@@ -27,12 +32,8 @@ export class Game {
       return false;
     }
 
-    if (this.wrongAnswers) {
-      this.showGameOver(GAMEOVER_LOSE);
-    } else {
-      this.showGameOver(GAMEOVER_WIN);
-    }
-
+    this.wrongAnswers ? this.showGameOver(GAMEOVER_LOSE) : this.showGameOver(GAMEOVER_WIN);
+  
     return true;
   }
 
@@ -41,10 +42,9 @@ export class Game {
       return;
     }
     const randomIndex = Math.floor(Math.random() * this.words.length);
-    const word = this.words[randomIndex];
+    this.selectedWord = this.words[randomIndex];
     this.words.splice(randomIndex, 1);
-    this.selectedWord = word;
-    this.layout.playAudio(word);
+    this.layout.playAudio(this.selectedWord);
   }
 
   selectCard(e) {
@@ -53,7 +53,7 @@ export class Game {
     }
     const word = e.target.getAttribute('alt');
     if (word === this.selectedWord) {
-      e.target.className += ' inactive';
+      e.target.classList.add('inactive');
       this.addAnswer(ANSWER_RIGHT);
     } else {
       this.addAnswer(ANSWER_WRONG);

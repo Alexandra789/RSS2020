@@ -35,14 +35,11 @@ export class Layout {
     this.activeCategoryIndex = 0;
   }
 
-  getCard(title, image, rotateImg) {
-    if (`${rotateImg}` === 'undefined') {
-      rotateImg = '';
-    }
+  getCard(title, image, rotateImg = '') {
     const cardElement = document.createElement('div');
-    cardElement.className = 'card';
+    cardElement.classList.add('card');
     if (this.flag === 'play') {
-      cardElement.className += ' play';
+      cardElement.classList.add('play');
     }
     cardElement.innerHTML = `
           <div class = front>
@@ -100,10 +97,10 @@ export class Layout {
       this.menu.classList.add('play');
       this.menu.classList.add('red');
       for (let i = 0; i < this.cardBody.length; i += 1) {
-        this.cardBody[i].parentNode.className += ' play';
+        this.cardBody[i].parentNode.classList.add('play');
       }
       for (let i = 0; i < this.menuLines.length; i += 1) {
-        this.menuLines[i].className += ' red';
+        this.menuLines[i].classList.add('red');
       }
     } else {
       this.menu.classList.remove('play');
@@ -191,8 +188,8 @@ export class Layout {
 
   rotateCard(e) {
     const rotateImg = '<img class="rotate" src="../assets/images/rotate.svg">';
-    const card = e.parentNode.parentNode.parentNode;
-    e.parentNode.parentNode.parentNode.classList.add('hover');
+    const card = e.closest('.card');
+    card.classList.add('hover');
     e.parentNode.classList.add('hover');
 
     const p = e.parentNode;
@@ -220,18 +217,40 @@ export class Layout {
 
 
   clickCard(e) {
-    if (e.target.className === 'card-text' || e.target.className === 'card-body' || e.target.className === 'card-img-top'
-            || e.target.className === 'rotate' || e.target.className === 'front') {
+    if (
+      e.target.className === 'card-text'
+      || e.target.className === 'card-body'
+      || e.target.className === 'card-img-top'
+      || e.target.className === 'rotate'
+      || e.target.className === 'front') {
       if (this.flag === 'play' && this.activeCategoryIndex) {
         return;
       }
       this.cardsCategoryWrapper.style.display = 'none';
       switch (e.target.className || e.target.tagName) {
-        case 'card-text': this.underlineMenuItem(e.target.innerText); this.clickWord(e.target.innerText); this.rewriteCategory(e.target.innerText); break;
-        case 'card-body': this.underlineMenuItem(e.target.lastChild.previousSibling.innerText); this.clickWord(e.target.lastChild.previousSibling.innerText); this.rewriteCategory(e.target.lastChild.previousSibling.innerText); break;
-        case 'card-img-top': this.underlineMenuItem(e.target.alt); this.clickWord(e.target.alt); this.rewriteCategory(e.target.alt); break;
-        case 'front': this.underlineMenuItem(e.target.lastElementChild.alt); this.clickWord(e.target.lastElementChild.alt); this.rewriteCategory(e.target.lastElementChild.alt); break;
-        case 'rotate': this.rotateCard(e.target); break;
+        case 'card-text':
+          this.underlineMenuItem(e.target.innerText);
+          this.clickWord(e.target.innerText);
+          this.rewriteCategory(e.target.innerText);
+          break;
+        case 'card-body':
+          this.underlineMenuItem(e.target.lastChild.previousSibling.innerText);
+          this.clickWord(e.target.lastChild.previousSibling.innerText);
+          this.rewriteCategory(e.target.lastChild.previousSibling.innerText);
+          break;
+        case 'card-img-top':
+          this.underlineMenuItem(e.target.alt);
+          this.clickWord(e.target.alt);
+          this.rewriteCategory(e.target.alt);
+          break;
+        case 'front':
+          this.underlineMenuItem(e.target.lastElementChild.alt);
+          this.clickWord(e.target.lastElementChild.alt);
+          this.rewriteCategory(e.target.lastElementChild.alt);
+          break;
+        case 'rotate':
+          this.rotateCard(e.target);
+          break;
         default: break;
       }
     } else if (e.target.tagName === 'LI') {
