@@ -17,7 +17,7 @@ body {
   .header {
     height: 110px;
     color: #fff;
-    background-image: url(assets/images/header.jpg);
+    background-image: url(../assets/images/header.jpg);
     background-size: cover;
     margin-bottom: 40px;
     overflow-x: hidden;
@@ -60,6 +60,7 @@ body {
         height: 45px;
         padding: 8px 15px;
         width: 90px;
+        outline: none;
 
         &:hover {
           filter: drop-shadow(2px 4px 6px black);
@@ -69,7 +70,7 @@ body {
       .search-input {
         width: calc(100% - 90px);
         max-width: 1350px;
-        background-image: url(assets/images/search.svg);
+        background-image: url(../assets/images/search.svg);
         background-repeat: no-repeat;
         background-size: 34px;
         background-position: 10px 5px;
@@ -98,7 +99,7 @@ body {
         position: absolute;
         width: 48px;
         height: 28px;
-        background-image: url(assets/images/clear.svg);
+        background-image: url(../assets/images/clear.svg);
         background-size: 20px;
         background-position: center center;
         background-repeat: no-repeat;
@@ -116,7 +117,7 @@ body {
         position: absolute;
         width: 48px;
         height: 28px;
-        background-image: url(assets/images/keyboard.svg);
+        background-image: url(../assets/images/keyboard.svg);
         background-size: 20px;
         background-position: center center;
         background-repeat: no-repeat;
@@ -163,6 +164,21 @@ body {
         line-height: 40px;
         text-align: center;
         color: rgb(214, 44, 26);
+      }
+    }
+  }
+
+  .cards-wrapper{
+    display: inline-flex;
+    width: 1300px;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+    justify-content: center;
+    .card{
+      //width: 350px;
+      //height: 445px;
+      .image-movie{
+        margin: 0px 25px 0px 25px;
       }
     }
   }
