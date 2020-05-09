@@ -157,9 +157,6 @@ body .cards-wrapper {
   overflow: hidden;
   justify-content: center;
 }
-body .cards-wrapper .card .image-movie {
-  margin: 0px 25px 0px 25px;
-}
 body .footer {
   width: 100%;
   min-height: 60px;
