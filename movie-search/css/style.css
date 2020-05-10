@@ -33,6 +33,7 @@ body .header h1 {
 body .container {
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 body .container .search {
   position: relative;
@@ -77,6 +78,7 @@ body .container .search .search-input {
   font-size: 22px;
   font-weight: 400;
   height: 45px;
+  margin-right: 10px;
   padding: 8px 15px;
   padding-left: 65px;
   padding-right: 150px;
@@ -89,13 +91,13 @@ body .container .search .search-input:hover {
 }
 body .container .search .search-clear {
   position: absolute;
-  width: 48px;
+  width: 28px;
   height: 28px;
   background-image: url(../assets/images/clear.svg);
   background-size: 20px;
   background-position: center center;
   background-repeat: no-repeat;
-  right: 180px;
+  right: 135px;
   cursor: pointer;
   opacity: 0.8;
   transition: 0.2s;
@@ -105,13 +107,13 @@ body .container .search span:hover {
 }
 body .container .search .search-tia {
   position: absolute;
-  width: 48px;
+  width: 28px;
   height: 28px;
   background-image: url(../assets/images/keyboard.svg);
   background-size: 20px;
   background-position: center center;
   background-repeat: no-repeat;
-  right: 120px;
+  right: 100px;
   cursor: pointer;
   opacity: 0.8;
   transition: 0.2s;
@@ -153,9 +155,36 @@ body .container .search .info {
 body .cards-wrapper {
   display: inline-flex;
   width: 1300px;
+  padding: 10px;
   /* flex-wrap: wrap; */
-  overflow: hidden;
   justify-content: center;
+}
+body .cards-wrapper .card {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 5px;
+  margin-right: 20px;
+  box-shadow: 4px 4px 4px 1px #7b8a8b;
+  width: 240px;
+  height: 190px;
+}
+body .cards-wrapper .card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 150px;
+}
+body .cards-wrapper .card .card-body {
+  padding: 5px;
+}
+body .cards-wrapper .card .card-body .card-title {
+  height: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: break-all;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 body .footer {
   width: 100%;

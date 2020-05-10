@@ -9,11 +9,14 @@ export default class Card {
   render() {
     const element = document.createElement('div');
     element.classList.add('card');
+    element.classList.add('col-xs-6');
     element.innerHTML = `
-        <h2>${this.title}</h2>
-        <img class="image-movie" src="${this.poster}" alt="movie poster"/>
-        <p>${this.year}</p>
-        <br><i class="fas fa-star"><p></p>`;
+        <img class="card-img-top" src="${this.poster}" alt="movie poster"/>
+        <div class="card-body">
+            <h5 class="card-title">${this.title}</h5>
+            <p>${this.year}</p>
+<!--                <br><i class="fas fa-star">-->
+        </div>`;
     return element;
   }
 }
