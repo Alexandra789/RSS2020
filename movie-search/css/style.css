@@ -322,6 +322,10 @@ body .footer .footer-container a:hover {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 400px) {
+  .keyboard {
+    display: none;
+  }
+
   body .container .carousel .card {
     margin-left: 35px;
     margin-right: 0px;
@@ -345,6 +349,10 @@ body .footer .footer-container a:hover {
   }
 }
 @media screen and (min-width: 400px) and (max-width: 1000px) {
+  .keyboard {
+    display: none;
+  }
+
   body .container .search .search-input {
     background-size: 25px;
     background-position: 10px 10px;
