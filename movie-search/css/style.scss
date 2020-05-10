@@ -78,6 +78,7 @@ body {
         background-position: 10px 5px;
         border-radius: 5px;
         border: 1px solid rgb(206, 212, 218);
+
         cursor: text;
         display: block;
         font-size: 22px;
@@ -168,51 +169,50 @@ body {
         color: rgb(214, 44, 26);
       }
     }
-  }
+    .carousel{
+      display: block;
+      /* flex-wrap: wrap; */
+      //overflow: hidden;
+      //-webkit-overflow-scrolling: touch;
+      justify-content: center;
+      .card{
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 5px;
+        margin-right: 20px;
+        box-shadow: 4px 4px 4px 1px #7b8a8b;
 
-  .cards-wrapper{
-    display: inline-flex;
-    width: 1300px;
-    padding: 10px;
-    /* flex-wrap: wrap; */
-    //overflow: hidden;
-    //-webkit-overflow-scrolling: touch;
-    justify-content: center;
-    .card{
-      border: none;
-      padding-left: 0;
-      padding-right: 0;
-      border-radius: 5px;
-      margin-right: 20px;
-      box-shadow: 4px 4px 4px 1px #7b8a8b;
+        width: 250px;
+        height: 350px;
 
-      width: 240px;
-      height: 190px;
-
-      img {
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        width: 100%;
-        height: 150px;
-      }
-
-      .card-body {
-        padding: 5px;
-
-        .card-title {
-          height: 15px;
-          margin-top: 0;
-          margin-bottom: 0;
-          word-break: break-all;
-          overflow-x: hidden;
-          overflow-y: hidden;
+        img {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          width: 100%;
+          height: 290px;
         }
+
+        .card-body {
+          padding: 5px;
+
+          .card-title {
+            height: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+            word-break: break-all;
+            overflow-x: hidden;
+            overflow-y: hidden;
+          }
+        }
+
+
+        //.image-movie{
+        //  //margin: 0px 25px 0px 25px;
+        //}
       }
-
-
-      //.image-movie{
-      //  //margin: 0px 25px 0px 25px;
-      //}
     }
   }
 
@@ -236,7 +236,7 @@ body {
         text-decoration: none;
         transition: .3s;
 
-        &:hover{
+        &:hover {
           filter: drop-shadow(2px 4px 6px black);
         }
       }
@@ -249,3 +249,5 @@ body {
     max-width: 1060px;
   }
 }
+
+

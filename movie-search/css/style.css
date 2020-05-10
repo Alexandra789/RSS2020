@@ -152,33 +152,33 @@ body .container .search .info {
   text-align: center;
   color: #d62c1a;
 }
-body .cards-wrapper {
-  display: inline-flex;
-  width: 1300px;
-  padding: 10px;
+body .container .carousel {
+  display: block;
   /* flex-wrap: wrap; */
   justify-content: center;
 }
-body .cards-wrapper .card {
+body .container .carousel .card {
   border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding-left: 0;
   padding-right: 0;
   border-radius: 5px;
   margin-right: 20px;
   box-shadow: 4px 4px 4px 1px #7b8a8b;
-  width: 240px;
-  height: 190px;
+  width: 250px;
+  height: 350px;
 }
-body .cards-wrapper .card img {
+body .container .carousel .card img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
-  height: 150px;
+  height: 290px;
 }
-body .cards-wrapper .card .card-body {
+body .container .carousel .card .card-body {
   padding: 5px;
 }
-body .cards-wrapper .card .card-body .card-title {
+body .container .carousel .card .card-body .card-title {
   height: 15px;
   margin-top: 0;
   margin-bottom: 0;

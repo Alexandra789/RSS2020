@@ -1,3 +1,4 @@
 import Layout from './Layout';
 
-Layout();
+// eslint-disable-next-line no-new
+new Layout();
