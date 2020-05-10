@@ -141,8 +141,20 @@ body .container .search .tooltip:hover:after {
   text-align: center;
   font-size: 16px;
 }
+body .container .search .info {
+  height: 40px;
+  margin: 0;
+  padding: 0 10px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #d62c1a;
+}
 body .container .carousel {
   display: block;
+  /* flex-wrap: wrap; */
   justify-content: center;
 }
 body .container .carousel .card {
@@ -167,12 +179,12 @@ body .container .carousel .card .card-body {
   padding: 10px;
 }
 body .container .carousel .card .card-body .card-title {
-  height: 15px;
+  display: block;
   margin-top: 0;
   margin-bottom: 0;
-  word-break: break-all;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 body .container .carousel .card .card-body .card-info {
   text-align: left;
@@ -209,6 +221,15 @@ body .footer .footer-container a:hover {
     max-width: 1060px;
   }
 }
+.keyboard-container {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 50%;
+  margin-left: -458px;
+}
+
 .alert-container {
   height: 52px;
 }

@@ -1,17 +1,26 @@
+/* global Flickity */
+
 import ApiManager from './ApiManager';
 import Card from './Card';
+import KeyboardLayout from './keyboard/KeyboardLayout';
 
 export default class Layout {
   constructor() {
     this.searchButton = document.querySelector('.search-btn');
+    this.keyboardButton = document.querySelector('.search-tia');
     this.clearButton = document.querySelector('.search-clear');
     this.searchInput = document.querySelector('.search-input');
     this.carouselContainer = document.querySelector('.carousel-container');
     this.cardsWrapper = document.querySelector('.carousel');
     this.alertContainer = document.querySelector('.alert-container');
+    this.keyboardContainer = document.querySelector('.keyboard-container');
     this.fragment = document.createDocumentFragment();
 
+    this.isKeyboardEnabled = false;
+
     this.apiManager = new ApiManager(this);
+    this.keyboardLayout = new KeyboardLayout(this.searchInput,
+      this.keyboardContainer, this.searchButton);
 
     this.bindButtons();
   }
@@ -19,6 +28,7 @@ export default class Layout {
   bindButtons() {
     this.searchButton.onclick = () => this.apiManager.search(this.searchInput.value);
     this.clearButton.onclick = () => this.clearInput();
+    this.keyboardButton.onclick = () => this.toggleKeyboard();
 
     this.searchInput.addEventListener('keyup', (e) => {
       if (e.keyCode === 13) {
@@ -36,8 +46,7 @@ export default class Layout {
       this.fragment.appendChild(card.render());
     }
     this.cardsWrapper.appendChild(this.fragment);
-    /* global Flickity */
-    /* eslint-disable no-new */
+    // eslint-disable-next-line no-new
     new Flickity(this.cardsWrapper, { wrapAround: true });
   }
 
@@ -45,9 +54,9 @@ export default class Layout {
     this.searchInput.value = '';
   }
 
-  showAlert(message) {
+  showAlert(message, type = 'danger') {
     this.alertContainer.innerHTML = `
-      <div class="alert alert-danger" role="alert">
+      <div class="alert alert-${type}" role="alert">
           ${message}
       </div>
     `;
@@ -55,5 +64,10 @@ export default class Layout {
 
   toggleLoading(flag) {
     this.alertContainer.innerHTML = flag ? '<div class="loader">Loading...</div>' : '';
+  }
+
+  toggleKeyboard() {
+    this.isKeyboardEnabled = !this.isKeyboardEnabled;
+    this.keyboardLayout.toggle(this.isKeyboardEnabled);
   }
 }
