@@ -15,7 +15,7 @@ export default class Layout {
   }
 
   bindButtons() {
-    this.clearButton.onclick = this.clearInput;
+    this.clearButton.onclick = () => this.clearInput();
     this.searchButton.onclick = () => this.apiManager.search(this.searchInput.value);
 
     this.searchInput.addEventListener('keyup', (e) => {
