@@ -143,7 +143,6 @@ body .container .search .tooltip:hover:after {
 }
 body .container .carousel {
   display: block;
-  /* flex-wrap: wrap; */
   justify-content: center;
 }
 body .container .carousel .card {
@@ -174,6 +173,12 @@ body .container .carousel .card .card-body .card-title {
   word-break: break-all;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+body .container .carousel .card .card-body .card-info {
+  text-align: left;
+}
+body .container .carousel .card .card-body .card-info .card-rating {
+  float: right;
 }
 body .footer {
   width: 100%;

@@ -36,7 +36,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
-    //-webkit-overflow-scrolling: touch;
 
     .search {
       position: relative;
@@ -156,14 +155,10 @@ body {
           font-size: 16px;
         }
       }
-
     }
 
     .carousel{
     display: block;
-    /* flex-wrap: wrap; */
-    //overflow: hidden;
-    //-webkit-overflow-scrolling: touch;
     justify-content: center;
     .card{
       border: none;
@@ -196,13 +191,20 @@ body {
           overflow-x: hidden;
           overflow-y: hidden;
         }
+
+        .card-info {
+          text-align:left;
+
+          .card-rating {
+             float: right;
+          }
+        }
       }
-      //.image-movie{
-      //  //margin: 0px 25px 0px 25px;
-      //}
     }
   }
-  }
+}
+
+
 
   .footer {
     width: 100%;
