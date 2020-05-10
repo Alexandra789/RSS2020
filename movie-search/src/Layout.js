@@ -9,11 +9,20 @@ export default class Layout {
     this.cardsWrapper = document.querySelector('.cards-wrapper');
     this.fragment = document.createDocumentFragment();
 
-    this.clearButton.onclick = this.clearInput;
-
     this.apiManager = new ApiManager(this);
 
+    this.bindButtons();
+  }
+
+  bindButtons() {
+    this.clearButton.onclick = this.clearInput;
     this.searchButton.onclick = () => this.apiManager.search(this.searchInput.value);
+
+    this.searchInput.addEventListener('keyup', (e) => {
+      if (e.keyCode === 13) {
+        this.searchButton.click();
+      }
+    });
   }
 
   createMovieCards(arrayMovies) {
