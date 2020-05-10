@@ -10,9 +10,19 @@ export default class ApiManager {
 
   async search(query) {
     const url = `${API_URL}/?s=${query}&apikey=${API_KEY}&type=movie`;
-    const res = await fetch(url);
-    const data = await res.json();
-    this.layout.createMovieCards(data.Search);
+    this.layout.toggleLoading(true);
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      if (!data.Search) {
+        this.layout.showAlert('No results found. Try something else');
+      } else {
+        this.layout.toggleLoading(false);
+        this.layout.createMovieCards(data.Search);
+      }
+    } catch (err) {
+      this.layout.showAlert(err);
+    }
   }
 
   // getRandomTitle() {

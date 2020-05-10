@@ -6,7 +6,9 @@ export default class Layout {
     this.searchButton = document.querySelector('.search-btn');
     this.clearButton = document.querySelector('.search-clear');
     this.searchInput = document.querySelector('.search-input');
+    this.carouselContainer = document.querySelector('.carousel-container');
     this.cardsWrapper = document.querySelector('.carousel');
+    this.alertContainer = document.querySelector('.alert-container');
     this.fragment = document.createDocumentFragment();
 
     this.apiManager = new ApiManager(this);
@@ -26,7 +28,8 @@ export default class Layout {
   }
 
   createMovieCards(arrayMovies) {
-    this.cardsWrapper.innerHTML = '';
+    this.carouselContainer.innerHTML = '<div class="carousel"></div>';
+    this.cardsWrapper = document.querySelector('.carousel');
 
     for (let i = 0; i < arrayMovies.length; i += 1) {
       const card = new Card(arrayMovies[i]);
@@ -34,11 +37,23 @@ export default class Layout {
     }
     this.cardsWrapper.appendChild(this.fragment);
     /* global Flickity */
-    // eslint-disable-next-line no-new
+    /* eslint-disable no-new */
     new Flickity(this.cardsWrapper, { wrapAround: true });
   }
 
   clearInput() {
     this.searchInput.value = '';
+  }
+
+  showAlert(message) {
+    this.alertContainer.innerHTML = `
+      <div class="alert alert-danger" role="alert">
+          ${message}
+      </div>
+    `;
+  }
+
+  toggleLoading(flag) {
+    this.alertContainer.innerHTML = flag ? '<div class="loader">Loading...</div>' : '';
   }
 }
