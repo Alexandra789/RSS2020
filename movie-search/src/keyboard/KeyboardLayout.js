@@ -9,9 +9,9 @@ export default class KeyboardLayout {
     const keyboardKeys = document.createElement('div');
 
     this.container = container;
-    contentWrapper.className = 'content-wrapper';
-    keyboard.className = 'keyboard';
-    keyboardKeys.className = 'keyboard__keys';
+    contentWrapper.classList.add('content-wrapper');
+    keyboard.classList.add('keyboard');
+    keyboardKeys.classList.add('keyboard__keys');
 
     this.container.append(contentWrapper);
     contentWrapper.appendChild(keyboard);
@@ -23,16 +23,14 @@ export default class KeyboardLayout {
   }
 
   loadstorage() {
-    const self = this;
-
-    window.onbeforeunload = function () {
-      const currentLang = self.input.getCurrentLang;
+    window.onbeforeunload = () => {
+      const currentLang = this.input.getCurrentLang;
       localStorage.setItem('lang', currentLang);
     };
 
-    window.onload = function () {
+    window.onload = () => {
       const lang = localStorage.getItem('lang');
-      if (lang !== null) { self.input.changeLang(lang); }
+      if (lang !== null) { this.input.changeLang(lang); }
     };
   }
 

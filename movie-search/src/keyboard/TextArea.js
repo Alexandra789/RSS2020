@@ -4,7 +4,9 @@ export default class TextArea {
   }
 
   printLetter(letter) {
-    if (!letter) return;
+    if (!letter) {
+      return;
+    }
     const caretPos = this.element.selectionStart;
     const text = this.element.value;
     this.element.value = `${text.slice(0, caretPos)}${letter}${text.slice(caretPos)}`;
